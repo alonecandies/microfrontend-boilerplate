@@ -1,0 +1,22 @@
+{
+  "presets": [
+    [
+      "@nx/react/babel",
+      {
+        "runtime": "automatic"
+      }
+    ]
+  ],
+  "plugins": [
+    [
+      "styled-components",
+      {
+        "pure": true,
+        "ssr": true
+      }
+    ],
+    ["@babel/plugin-transform-private-methods", { "loose": true }],
+    ["@babel/plugin-transform-private-property-in-object", { "loose": true }],
+    ["@babel/plugin-transform-class-properties", { "loose": true }]
+  ]
+}
